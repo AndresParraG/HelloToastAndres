@@ -13,12 +13,14 @@ public class MainActivity extends AppCompatActivity {
     private Button countB;
     private Button toastB;
     private int num = 0;
-    private TextView showCount = (TextView) findViewById(R.id.show_count);
+    private TextView showCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        showCount = (TextView) findViewById(R.id.show_count);
 
         countB = (Button) findViewById(R.id.button_count);
         countB.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateCounter() {
-        showCount.setText(num);
+        showCount.setText(String.valueOf(num));
     }
 }

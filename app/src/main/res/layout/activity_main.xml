@@ -4,26 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="25dp"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button_toast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="10"
         android:text="@string/toast_button" />
 
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="100"
         android:background="@color/yellow"
+        android:gravity="center"
         android:text="@string/show_count"
-        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="200sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="10"
         android:text="@string/count_button" />
 </LinearLayout>
